@@ -1,7 +1,9 @@
 #include <iostream>
+#include <cmath>
+#include <iomanip>
 using namespace std;
 double funct(double x){
-    //Function f(x) = x^3 - 4x + 9;
+    //Function f = x^3 - 4x + 9;
     double value = x*x*x  - 4*x - 9;
     return value;
 }
@@ -14,12 +16,10 @@ int main(){
     while(true){
         x2 = (x+x1)/2;
         double mul = funct(x) * funct(x2);
-        cout<<x<<" "<<x1<<" "<<x2<<" "<<mul<<endl;
+        cout<<x<<" "<<x1<<" "<<x2<<endl;
         if(mul < 0){
-            x = x;
             x1 = x2;
         }else if(mul > 0){
-            x1 = x1;
             x = x2;
         }else{
             break;

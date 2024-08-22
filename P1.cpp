@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 using namespace std;
 double funct(double x){
     //Function f(x) = x^3 - 4x + 9;

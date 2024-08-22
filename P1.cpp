@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 double funct(double x){
-    //Function f = x^3 - 4x + 9;
+    //Function f(x) = x^3 - 4x + 9;
     double value = x*x*x  - 4*x - 9;
     return value;
 }

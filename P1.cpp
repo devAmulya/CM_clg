@@ -13,10 +13,12 @@ int main(){
     double x = 2;
     double x1 = 3;
     double x2;
+    int i = 1;
     while(true){
         x2 = (x+x1)/2;
         double mul = funct(x) * funct(x2);
-        cout<<x<<" "<<x1<<" "<<x2<<endl;
+        cout<<"Iteration "<<i<<" : ("<<x<<","<<x1<<")"<<endl;
+        i++;
         if(mul < 0){
             x1 = x2;
         }else if(mul > 0){
@@ -32,6 +34,6 @@ int main(){
             break;
         }
     }
-    cout<<x2;
+    cout<< "The root is approximately : "<<setprecision(5) <<x2;
     
 }
